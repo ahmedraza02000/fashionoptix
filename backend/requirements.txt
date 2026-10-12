@@ -1,0 +1,6 @@
+# No third-party dependencies — backend/app.py uses only the Python
+# standard library (http.server, sqlite3, hashlib, secrets).
+# If you add the scraper's dependencies for a scheduled scraping job,
+# list them here, e.g.:
+# requests==2.32.3
+# beautifulsoup4==4.12.3

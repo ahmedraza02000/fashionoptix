@@ -1,0 +1,14 @@
+# Render.com service definition for the backend.
+# On Render: New -> Blueprint -> point at your repo -> it reads this file.
+# (Or skip this file and configure the same settings manually in the
+# dashboard under New -> Web Service.)
+services:
+  - type: web
+    name: fashionoptix-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: "echo 'stdlib only — nothing to install'"
+    startCommand: "python app.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
